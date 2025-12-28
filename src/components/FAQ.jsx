@@ -7,20 +7,20 @@ export default function FAQ() {
 
     const faqs = [
         {
-            question: "How does PlayVision analyze basketball games?",
-            answer: "PlayVision uses advanced computer vision and AI to automatically track player movements, analyze plays, and generate detailed statistics from game footage. Simply upload your video and our system processes it to extract valuable insights."
+            question: "How does PaloaLabs analyze basketball games?",
+            answer: "PaloaLabs uses advanced computer vision and AI to automatically track player movements, analyze plays, and generate detailed statistics from game footage. Simply upload your video and our system processes it to extract valuable insights."
         },
         {
             question: "Can I build roster evaluations?",
-            answer: "Yes! PlayVision allows you to build comprehensive roster evaluations using our extensive database of player metrics and performance data. You can compare players, analyze strengths and weaknesses, and make data-driven recruiting decisions."
+            answer: "Yes! PaloaLabs allows you to build comprehensive roster evaluations using our extensive database of player metrics and performance data. You can compare players, analyze strengths and weaknesses, and make data-driven recruiting decisions."
         },
         {
             question: "How quickly are results available after uploading?",
             answer: "Processing time depends on video length and quality. Typically, a full game video is analyzed within 15-30 minutes. You'll receive an email notification when your analysis is ready to view."
         },
         {
-            question: "Does PlayVision integrate with other platforms?",
-            answer: "Yes, PlayVision offers integrations with popular coaching tools and video platforms. We provide API access for Pro Suite and Teams subscribers to seamlessly integrate our analytics into your existing workflow."
+            question: "Does PaloaLabs integrate with other platforms?",
+            answer: "Yes, PaloaLabs offers integrations with popular coaching tools and video platforms. We provide API access for Pro Suite and Teams subscribers to seamlessly integrate our analytics into your existing workflow."
         }
     ];
 
@@ -41,9 +41,8 @@ export default function FAQ() {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className={`border border-white/10 rounded-lg overflow-hidden transition-all duration-300 ${
-                                openIndex === index ? 'bg-white/5' : 'bg-transparent'
-                            }`}
+                            className={`border border-white/10 rounded-lg overflow-hidden transition-all duration-300 ${openIndex === index ? 'bg-white/5' : 'bg-transparent'
+                                }`}
                         >
                             {/* Question */}
                             <button
@@ -59,9 +58,8 @@ export default function FAQ() {
                                     </span>
                                 </div>
                                 <div
-                                    className={`text-white text-2xl transition-transform duration-300 ${
-                                        openIndex === index ? 'rotate-45' : ''
-                                    }`}
+                                    className={`text-white text-2xl transition-transform duration-300 ${openIndex === index ? 'rotate-45' : ''
+                                        }`}
                                 >
                                     +
                                 </div>
@@ -69,9 +67,8 @@ export default function FAQ() {
 
                             {/* Answer */}
                             <div
-                                className={`overflow-hidden transition-all duration-300 ${
-                                    openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                                }`}
+                                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                                    }`}
                             >
                                 <div className="px-6 pb-6 pl-[4.5rem]">
                                     <p className="text-gray-400 leading-relaxed">
